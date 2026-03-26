@@ -17,13 +17,11 @@ export default function Contact() {
 
     if (!form) return;
 
-    // Vérifie les champs requis
     if (!form.checkValidity()) {
       setMessage(SuccesForm.error);
       return;
     }
 
-    // Si tout est rempli
     setMessage(SuccesForm.success);
 
     form.reset();

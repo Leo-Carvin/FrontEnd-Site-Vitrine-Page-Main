@@ -1,87 +1,55 @@
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import Image from "next/image";
+import Link from "next/link";
+import { FaMapMarkerAlt, FaPhone } from "react-icons/fa";
+import Logo from "../../../public/Logo/LogoCyneris.png"; 
 
 export default function Footer() {
   return (
-    <footer className="text-center bg-white border-t border-gray-800">
-      <div className="flex justify-around">
-        <div className="max-w-6xl flex flex-col md:flex-row justify-start items-center gap-20">
-        <div className="w-50 flex gap-6 flex-col">
-          <img
-            src="/Logo/LogoCyneris.png"
-            alt="Studio Nova"
-            className="w-32 h-auto mx-auto md:mx-0"
-          />
-          <p>
-            Votre partenaire IT de confiance 
-            pour une infrastructure 
-            performante et sécurisée.
+    <footer className="bg-white border-t border-gray-100 py-12 px-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+
+        {/* Logo + description */}
+        <div className="flex flex-col gap-4">
+          <Image src={Logo} alt="Cyneris" width={100} height={60} />
+          <p className="text-gray-500 text-sm leading-relaxed">
+            Votre partenaire IT de confiance pour une infrastructure performante et sécurisée.
           </p>
         </div>
-          
-          <div className="flex gap-6 flex-col">
-            <h2 className="font-bold"> Liens Importants </h2>
-            <li><a href="/mentions-legales" className="hover:text-white">
-              Mentions légales
-            </a> </li>
-            <li><a href="#" className="hover:text-white">
-              Politique de confidentialité
-            </a> </li>
-          </div>
 
-          <div className="flex gap-6 flex-col">
-            <p className="font-bold"> 
-              Notre Expertise
-            </p>
-            <li><a href="#" className="hover:text-white">
-              Front-End
-            </a></li>
-            <li><a href="#" className="hover:text-white">
-              Back-end
-            </a></li>
-          </div>
-
-          <div className="flex gap-6 flex-col">
-            <h2 className="font-bold"> Navigation </h2>
-            <li><a href="/#a-propos" className="hover:text-white">
-              À propos
-            </a></li>
-            <li><a href="/#services" className="hover:text-white">
-              Services
-            </a></li>
-            <li> <a href="/#contact" className="hover:text-white">
-              Contact
-            </a> </li>
-            <a href="/#mentions-legales" className="hover:text-white"></a>
-          </div>
-
-          <div className="flex gap-2 flex-col">
-            <h2 className="font-bold"> Zone intervention </h2>
-            <p> TOULON </p>
-            <p> Aix en PROVENCE </p>
-            <p>BORDEAUX</p>
-            <p> PARIS </p>
-            <p> TANGER</p>
-          </div>
-
+        {/* Services */}
+        <div className="flex flex-col gap-3">
+          <h3 className="font-bold text-black mb-2">Services</h3>
+          <Link href="/services/reseau" className="text-gray-500 hover:text-black text-sm transition">Réseau</Link>
+          <Link href="/services/infrastructure" className="text-gray-500 hover:text-black text-sm transition">Infrastructure</Link>
+          <Link href="/services/cyber-securite" className="text-gray-500 hover:text-black text-sm transition">Cyber Sécurité</Link>
+          <Link href="/services/gestion-donnees" className="text-gray-500 hover:text-black text-sm transition">Gestion de données</Link>
+          <Link href="/services/plateformes" className="text-gray-500 hover:text-black text-sm transition">Plateformes & Solutions</Link>
         </div>
-      </div>
 
-          <div className="flex justify-center gap-4 text-2xl mt-6 mb-4">
-            <a href="#" aria-label="Facebook">
-              <FaFacebookF />
-            </a>
-            <a href="#" aria-label="Instagram">
-              <FaInstagram />
-            </a>
-            <a href="#" aria-label="LinkedIn">
-              <FaLinkedinIn />
-            </a>
+        {/* Entreprise */}
+        <div className="flex flex-col gap-3">
+          <h3 className="font-bold text-black mb-2">Entreprise</h3>
+          <Link href="#a-propos" className="text-gray-500 hover:text-black text-sm transition">À propos</Link>
+          <Link href="#valeurs" className="text-gray-500 hover:text-black text-sm transition">Nos valeurs</Link>
+          <Link href="#carrieres" className="text-gray-500 hover:text-black text-sm transition">Carrières</Link>
+          <Link href="#blog" className="text-gray-500 hover:text-black text-sm transition">Blog</Link>
+          <Link href="#contact" className="text-gray-500 hover:text-black text-sm transition">Contact</Link>
+        </div>
+
+        {/* Contact */}
+        <div className="flex flex-col gap-4">
+          <h3 className="font-bold text-black mb-2">Contact</h3>
+          <div className="flex items-start gap-3 text-sm text-gray-500">
+            <FaMapMarkerAlt className="text-[var(--color-1)] mt-1 shrink-0" size={16} />
+            <span>Bâtiment Le Nobel, 270 Av. Jean D'Ormesson, 83130 La Garde</span>
           </div>
-      <p>2026 Studio Nova. Tous droits réservés.</p>
+          <div className="flex items-center gap-3 text-sm text-gray-500">
+            <FaPhone className="text-[var(--color-1)] shrink-0" size={16} />
+            <span>04 XX XX XX XX</span>
+          </div>
+        </div>
+
+      </div>
     </footer>
   );
 }
