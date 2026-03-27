@@ -7,6 +7,9 @@ import Virtualisation from "../../../components/section/Services/Virtualisation"
 import CyberSecu from "../../../components/section/Services/Cybersecurite";
 import GestionDesDonnees from "../../../components/section/Services/GestionDesDonnees";
 import Cloud from "../../../components/section/Services/Cloud";
+import Partenaire from "../../../components/section/Services/Partenaire";
+import Methodologie from "../../../components/section/Services/Methodologie";
+import Contact from "../../../components/section/Services/Contact";
 
 export default function MainPage() {
   return (
@@ -19,6 +22,9 @@ export default function MainPage() {
       <CyberSecu />
       <GestionDesDonnees />
       <Cloud />
+      <Methodologie />
+      <Partenaire />
+      <Contact />
       <Footer />
     </>
   );

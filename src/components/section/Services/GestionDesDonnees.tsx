@@ -9,7 +9,7 @@ export default function GestionDesDonnees() {
     <section className="bg-[#F9FAFB] py-20 px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
-        <div>
+        <div className="order-2 md:order-1">
             <Image
             src={InfraImg}
             alt="Infrastructure & Virtualisation"
@@ -17,7 +17,7 @@ export default function GestionDesDonnees() {
             />
         </div>
 
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 order-1 md:order-2">
 
             <div className="w-14 h-14 rounded-xl bg-[var(--color-5)] flex items-center justify-center text-white text-2xl">
             <FaDatabase />

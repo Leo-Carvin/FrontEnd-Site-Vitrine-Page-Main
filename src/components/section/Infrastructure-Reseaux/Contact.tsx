@@ -1,0 +1,26 @@
+import Link from "next/link";
+
+export default function CTAReseau() {
+    return (
+    <section className="py-20 px-6 md:px-20" style={{ background: "linear-gradient(to bottom right, var(--color-5) 0%, var(--color-3) 100%)" }}>
+        <div className="max-w-3xl mx-auto flex flex-col items-center text-center gap-6">
+
+        <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
+            Optimisez et sécurisez votre réseau dès aujourd'hui
+        </h2>
+
+        <p className="text-white/70 text-lg">
+            Faites confiance à l'expertise CYNERIS pour transformer votre infrastructure réseau en avantage concurrentiel
+        </p>
+
+        <Link
+            href="/#contact"
+            className="mt-4 bg-[var(--color-1)] hover:bg-[var(--color-2)] text-white font-semibold px-10 py-4 rounded-lg transition"
+        >
+            Contactez CYNERIS
+        </Link>
+
+        </div>
+    </section>
+);
+}

@@ -12,19 +12,19 @@ export default function Header() {
 
   return (
     <header className="fixed w-full z-30 bg-white text-black font-bold">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-30 py-2">
 
         <Link href="/" onClick={() => setMenuOpen(false)}>
           <Image src={LogoCyneris} className="w-10 md:w-20 lg:w-20" alt="Cyneris Logo"/>
         </Link>
 
-        <nav className="hidden md:flex gap-6">
+        <nav className="items-center hidden md:flex gap-6">
           <div className="relative group">
             <Link href="/Page/Services" className="hover:text-accent flex items-center gap-1">
               Nos Services {'>'}
             </Link>
             <ul className="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-lg py-2 w-56 border border-gray-200">
-              <li><Link href="/Page/Services#reseau" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">Réseau</Link></li>
+              <li><Link href="/Page/Infra-Reseaux" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">Réseau</Link></li>
               <li><Link href="/Page/Services#infrastructure" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">Infrastructure</Link></li>
               <li><Link href="/Page/Services#cyber-securite" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">Cyber Sécurité</Link></li>
               <li><Link href="/Page/Services#gestion-donnees" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">Gestion de données</Link></li>
@@ -33,7 +33,7 @@ export default function Header() {
           </div>
           <Link href="/#a-propos" className="hover:text-accent">À propos</Link>
           <Link href="/#avantages" className="hover:text-accent">Avantages</Link>
-          <Link href="/#contact" className="hover:text-accent">Contact</Link>
+          <Link href="/#contact" className="bg-[var(--color-5)] hover:bg-[var(--color-4)] text-white font-semibold px-5 py-2 rounded-lg transition">Contact</Link>
         </nav>
 
         <button

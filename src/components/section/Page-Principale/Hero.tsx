@@ -33,7 +33,7 @@ export default function Hero() {
               </button>
 
               <Link href="/Page/Services" className="hover:text-accent flex items-center gap-1">
-              <button className="border-2 border-white text-white hover:bg-white hover:text-blue-700 font-semibold px-6 py-3 rounded-lg transition">
+              <button className="w-full border-2 border-white text-white hover:bg-white hover:text-blue-700 font-semibold px-6 py-3 rounded-lg transition">
                 Découvrir nos services
               </button>
               </Link>
