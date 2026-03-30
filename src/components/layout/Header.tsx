@@ -26,7 +26,7 @@ export default function Header() {
             <ul className="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-lg py-2 w-56 border border-gray-200">
               <li><Link href="/Page/Infra-Reseaux" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">Réseau</Link></li>
               <li><Link href="/Page/Services#infrastructure" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">Infrastructure</Link></li>
-              <li><Link href="/Page/Services#cyber-securite" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">Cyber Sécurité</Link></li>
+              <li><Link href="/Page/Cybersecurite" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">Cyber Sécurité</Link></li>
               <li><Link href="/Page/Services#gestion-donnees" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">Gestion de données</Link></li>
               <li><Link href="/Page/Services#plateformes" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">Plateformes & Solutions</Link></li>
             </ul>
