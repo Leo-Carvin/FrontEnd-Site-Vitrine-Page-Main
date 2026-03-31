@@ -45,7 +45,7 @@ export default function GestionDesDonnees() {
             ))}
             </ul>
 
-            <Link href="/Page/Services#infrastructure" className="text-[var(--color-3)] font-semibold hover:underline w-fit">
+            <Link href="/Page/GestionDesDonnees" className="text-[var(--color-3)] font-semibold hover:underline w-fit">
             En savoir plus →
             </Link>
 
