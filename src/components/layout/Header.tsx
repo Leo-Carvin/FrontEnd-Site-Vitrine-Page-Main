@@ -28,7 +28,7 @@ export default function Header() {
               <li><Link href="/Page/Services#infrastructure" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">Infrastructure</Link></li>
               <li><Link href="/Page/Cybersecurite" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">Cyber Sécurité</Link></li>
               <li><Link href="/Page/GestionDesDonnees" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">Gestion de données</Link></li>
-              <li><Link href="/Page/Services#plateformes" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">Plateformes & Solutions</Link></li>
+              <li><Link href="/Page/Plateformes-Solutions" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">Plateformes & Solutions</Link></li>
             </ul>
           </div>
           <Link href="/#a-propos" className="hover:text-accent">À propos</Link>

@@ -37,7 +37,7 @@ export default function Cloud() {
             ))}
             </ul>
 
-            <Link href="/Page/Services#reseau" className="text-[var(--color-3)] font-semibold hover:underline w-fit">
+            <Link href="/Page/Plateformes-Solutions" className="text-[var(--color-3)] font-semibold hover:underline w-fit">
             En savoir plus →
             </Link>
 

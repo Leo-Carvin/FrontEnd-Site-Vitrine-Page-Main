@@ -4,7 +4,7 @@ import Hero from "../../../components/section/Cybersecurite/Hero";
 import CyberStats from "../../../components/section/Cybersecurite/Cyberattaque";
 import MenacesCyber from "../../../components/section/Cybersecurite/Menace";
 import SolutionsCyber from "../../../components/section/Cybersecurite/Solutions";
-import ProtectionInfra from "../../../components/section/Cybersecurite/ProtectionInfra";
+import ProtectionInfra from "../../../components/section/Cybersecurite/OutilsCollaboratifs";
 import ExpertiseCyneris from "../../../components/section/Cybersecurite/expertise";
 import CTACyber from "../../../components/section/Cybersecurite/Anticiper";
 import ProtectionDonnees from "../../../components/section/Cybersecurite/Protection";
