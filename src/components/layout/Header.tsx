@@ -33,7 +33,7 @@ export default function Header() {
           </div>
           <Link href="/#a-propos" className="hover:text-accent">À propos</Link>
           <Link href="/#avantages" className="hover:text-accent">Avantages</Link>
-          <Link href="/#contact" className="bg-[var(--color-5)] hover:bg-[var(--color-4)] text-white font-semibold px-5 py-2 rounded-lg transition">Contact</Link>
+          <Link href="/Page/Contact" className="bg-[var(--color-5)] hover:bg-[var(--color-4)] text-white font-semibold px-5 py-2 rounded-lg transition">Contact</Link>
         </nav>
 
         <button
@@ -58,18 +58,18 @@ export default function Header() {
             {servicesOpen && (
               <ul className="mt-2 flex flex-col gap-2 pl-4 border-l-2 border-[var(--color-1)]">
                 <li><Link href="/Page/Services" className="text-gray-600 font-normal" onClick={() => setMenuOpen(false)}>Tous nos services</Link></li>
-                <li><Link href="/Page/Services#reseau" className="text-gray-600 font-normal" onClick={() => setMenuOpen(false)}>Réseau</Link></li>
+                <li><Link href="/Page/Infra-Reseaux" className="text-gray-600 font-normal" onClick={() => setMenuOpen(false)}>Réseau</Link></li>
                 <li><Link href="/Page/Services#infrastructure" className="text-gray-600 font-normal" onClick={() => setMenuOpen(false)}>Infrastructure</Link></li>
-                <li><Link href="/Page/Services#cyber-securite" className="text-gray-600 font-normal" onClick={() => setMenuOpen(false)}>Cyber Sécurité</Link></li>
-                <li><Link href="/Page/Services#gestion-donnees" className="text-gray-600 font-normal" onClick={() => setMenuOpen(false)}>Gestion de données</Link></li>
-                <li><Link href="/Page/Services#plateformes" className="text-gray-600 font-normal" onClick={() => setMenuOpen(false)}>Plateformes & Solutions</Link></li>
+                <li><Link href="/Page/Cybersecurite" className="text-gray-600 font-normal" onClick={() => setMenuOpen(false)}>Cyber Sécurité</Link></li>
+                <li><Link href="/Page/GestionDesDonnees" className="text-gray-600 font-normal" onClick={() => setMenuOpen(false)}>Gestion de données</Link></li>
+                <li><Link href="/Page/Plateformes-Solutions" className="text-gray-600 font-normal" onClick={() => setMenuOpen(false)}>Plateformes & Solutions</Link></li>
               </ul>
             )}
           </div>
 
           <Link href="/#a-propos" onClick={() => setMenuOpen(false)}>À propos</Link>
           <Link href="/#avantages" onClick={() => setMenuOpen(false)}>Avantages</Link>
-          <Link href="/#contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+          <Link href="/Page/Contact" onClick={() => setMenuOpen(false)}>Contact</Link>
         </div>
       )}
 
