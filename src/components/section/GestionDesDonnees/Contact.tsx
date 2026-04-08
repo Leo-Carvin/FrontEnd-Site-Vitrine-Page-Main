@@ -14,7 +14,7 @@ export default function CTA() {
         </p>
 
         <Link
-            href="/contact"
+            href="Contact"
             className="mt-2 px-10 py-4 bg-[var(--color-5)] text-white font-semibold text-base rounded-md hover:opacity-90 transition-opacity"
         >
             Contactez CYNERIS

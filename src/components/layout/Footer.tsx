@@ -8,7 +8,6 @@ export default function Footer() {
     <footer className="bg-white border-t border-gray-100 py-12 px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
 
-        {/* Logo + description */}
         <div className="flex flex-col gap-4">
           <Image src={Logo} alt="Cyneris" width={100} height={60} />
           <p className="text-gray-500 text-sm leading-relaxed">
@@ -16,14 +15,13 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Services */}
         <div className="flex flex-col gap-3">
           <h3 className="font-bold text-black mb-2">Services</h3>
-          <Link href="/services/reseau" className="text-gray-500 hover:text-black text-sm transition">Réseau</Link>
-          <Link href="/services/infrastructure" className="text-gray-500 hover:text-black text-sm transition">Infrastructure</Link>
-          <Link href="/services/cyber-securite" className="text-gray-500 hover:text-black text-sm transition">Cyber Sécurité</Link>
-          <Link href="/services/gestion-donnees" className="text-gray-500 hover:text-black text-sm transition">Gestion de données</Link>
-          <Link href="/services/plateformes" className="text-gray-500 hover:text-black text-sm transition">Plateformes & Solutions</Link>
+          <Link href="/Page/Infra-Reseaux" className="text-gray-500 hover:text-black text-sm transition">Réseau</Link>
+          <Link href="/Page/Infra-Reseaux" className="text-gray-500 hover:text-black text-sm transition">Infrastructure</Link>
+          <Link href="/Page/Cybersecurite" className="text-gray-500 hover:text-black text-sm transition">Cyber Sécurité</Link>
+          <Link href="/Page/GestionDesDonnees" className="text-gray-500 hover:text-black text-sm transition">Gestion de données</Link>
+          <Link href="/Page/Plateformes-Solutions" className="text-gray-500 hover:text-black text-sm transition">Plateformes & Solutions</Link>
         </div>
 
         {/* Entreprise */}

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { motion } from "motion/react";
 import HeroImg from "../../../../public/Image/modern-data-center-providing-cloud-services-enabling-businesses-access-computing-resources-storage-demand-internet-server-room-infrastructure-3d-render-animation.jpg";
@@ -44,9 +45,12 @@ export default function Hero() {
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
                 className="flex justify-center md:justify-start"
                 >
+                <Link href="/Page/Contact" className="hover:text-accent flex items-center gap-1">
                 <button className="bg-white hover:bg-[var(--color-2)] text-[var(--color-5)] hover:text-white font-semibold px-6 py-3 rounded-lg transition">
                     Nous contacter →
                 </button>
+                </Link>
+
                 </motion.div>
 
             </div>

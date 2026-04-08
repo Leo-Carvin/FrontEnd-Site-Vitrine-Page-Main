@@ -1,3 +1,6 @@
+"use client";
+
+import Link from "next/link";
 import nousChoisir from "../../../data/Choisir";
 import { FaPhone } from "react-icons/fa6";
 
@@ -22,9 +25,12 @@ export default function NousChoisir() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/Page/Contact" className="hover:text-accent flex items-center gap-1">
                 <button className="bg-[var(--color-1)] hover:bg-[var(--color-2)] text-white font-semibold px-6 py-3 rounded-lg transition">
                 Contacter-nous →
                 </button>
+                </Link>
+
                 <button className="flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white hover:text-blue-700 font-semibold px-6 py-3 rounded-lg transition">
                 <FaPhone /> 04 00 00 00 00
                 </button>

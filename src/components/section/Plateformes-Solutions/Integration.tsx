@@ -1,49 +1,114 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "motion/react";
 import { FaCheck } from "react-icons/fa";
-import DonneesImg from "../../../../public/Image/digital-world-banner-background-remixed-from-public-domain-by-nasa.jpg"; 
+import DonneesImg from "../../../../public/Image/digital-world-banner-background-remixed-from-public-domain-by-nasa.jpg";
 
 export default function Integration() {
     return (
-    <section className="bg-[#F9FAFB] py-20 px-6 md:px-20">
+        <section className="bg-[#F9FAFB] py-20 px-6 md:px-20">
         <div className="max-w-6xl mx-auto">
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
-            <div className="flex flex-col gap-6">
+            {/* TEXTE (gauche) */}
+            <motion.div
+                className="flex flex-col gap-6"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+                variants={{
+                    hidden: {},
+                    visible: {
+                        transition: {
+                            staggerChildren: 0.15,
+                        },
+                    },
+                }}
+            >
+                <motion.h3
+                    variants={{
+                        hidden: { opacity: 0, x: -80 },
+                        visible: {
+                            opacity: 1,
+                            x: 0,
+                            transition: { duration: 0.8, ease: "easeOut" },
+                        },
+                    }}
+                    className="text-2xl font-bold text-black"
+                >
+                    Intégration Logiciels Métiers
+                </motion.h3>
 
-            <h3 className="text-2xl font-bold text-black">
-                Intégration Logiciels Métiers
-            </h3>
+                <motion.p
+                    variants={{
+                        hidden: { opacity: 0, x: -60 },
+                        visible: {
+                            opacity: 1,
+                            x: 0,
+                            transition: { duration: 0.8, ease: "easeOut" },
+                        },
+                    }}
+                    className="text-gray-500 leading-relaxed"
+                >
+                    Intégrez vos outils métiers dans un écosystème cohérent pour optimiser vos processus business.            
+                </motion.p>
 
-            <p className="text-gray-500 leading-relaxed">
-            Intégrez vos outils métiers dans un écosystème cohérent pour optimiser vos processus business.            
-            </p>
+                <motion.ul
+                    className="flex flex-col gap-3"
+                    variants={{
+                        hidden: {},
+                        visible: {
+                            transition: {
+                                staggerChildren: 0.08,
+                                delayChildren: 0.3,
+                            },
+                        },
+                    }}
+                >
+                    {[
+                        "ERP, CRM et solutions sectorielles",
+                        "APIs et connecteurs personnalisés",
+                        "Optimisation des workflows",
+                    ].map((item, index) => (
+                        <motion.li
+                            key={index}
+                            variants={{
+                                hidden: { opacity: 0, x: -30 },
+                                visible: {
+                                    opacity: 1,
+                                    x: 0,
+                                    transition: { duration: 0.5, ease: "easeOut" },
+                                },
+                            }}
+                            className="flex items-center gap-3 text-gray-600 text-sm"
+                        >
+                            <FaCheck className="text-[var(--color-1)] shrink-0" />
+                            {item}
+                        </motion.li>
+                    ))}
+                </motion.ul>
 
-            <ul className="flex flex-col gap-3">
-                {[
-                "ERP, CRM et solutions sectorielles",
-                "APIs et connecteurs personnalisés",
-                "Optimisation des workflows",
-                ].map((item, index) => (
-                <li key={index} className="flex items-center gap-3 text-gray-600 text-sm">
-                    <FaCheck className="text-[var(--color-1)] shrink-0" />
-                    {item}
-                </li>
-                ))}
-            </ul>
+            </motion.div>
 
-            </div>
-
-            <div className="flex justify-center">
-            <Image
-                src={DonneesImg}
-                alt="ProtectionDesDonnees"
-                className="rounded-2xl w-full max-w-sm h-auto object-contain"
-            />
-            </div>
+            {/* IMAGE (droite) */}
+            <motion.div
+                className="flex justify-center"
+                initial={{ opacity: 0, x: 80 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+                viewport={{ once: true, amount: 0.2 }}
+            >
+                <Image
+                    src={DonneesImg}
+                    alt="ProtectionDesDonnees"
+                    className="rounded-2xl w-full max-w-sm h-auto object-contain"
+                />
+            </motion.div>
 
         </div>
         </div>
-    </section>
+        </section>
     );
 }

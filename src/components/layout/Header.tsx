@@ -31,7 +31,7 @@ export default function Header() {
               <li><Link href="/Page/Plateformes-Solutions" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">Plateformes & Solutions</Link></li>
             </ul>
           </div>
-          <Link href="/#a-propos" className="hover:text-accent">À propos</Link>
+          <Link href="/Page/Apropos" className="hover:text-accent">À propos</Link>
           <Link href="/#avantages" className="hover:text-accent">Avantages</Link>
           <Link href="/Page/Contact" className="bg-[var(--color-5)] hover:bg-[var(--color-4)] text-white font-semibold px-5 py-2 rounded-lg transition">Contact</Link>
         </nav>

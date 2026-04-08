@@ -23,7 +23,7 @@ export default function Contact() {
             </p>
 
             <Link
-            href="/contact"
+            href="Contact"
             className="bg-[var(--color-1)] mt-2 px-10 py-3 text-white font-semibold text-sm rounded-md hover:bg-white hover:text-[var(--color-5)] transition-colors"
             >
             Contactez CYNERIS

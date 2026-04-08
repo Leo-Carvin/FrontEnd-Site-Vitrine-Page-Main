@@ -14,7 +14,7 @@ export default function CTACyber() {
         </p>
 
         <Link
-            href="/#contact"
+            href="Contact"
             className="mt-4 bg-[var(--color-1)] hover:bg-[var(--color-2)] text-white font-semibold px-10 py-4 rounded-lg transition"
         >
             Contactez CYNERIS

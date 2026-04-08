@@ -44,9 +44,12 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <Link href="/Page/Contact" className="hover:text-accent flex items-center gap-1">
               <button className="bg-[var(--color-1)] hover:bg-[var(--color-2)] text-white font-semibold px-6 py-3 rounded-lg transition">
                 Nous contacter →
               </button>
+              </Link>
+
               <Link href="/Page/Services" className="hover:text-accent flex items-center gap-1">
                 <button className="w-full border-2 border-white text-white hover:bg-white hover:text-blue-700 font-semibold px-6 py-3 rounded-lg transition">
                   Découvrir nos services

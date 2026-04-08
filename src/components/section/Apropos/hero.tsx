@@ -1,39 +1,47 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { motion } from "motion/react";
-import HeroImg from "../../../../public/Image/v617batch2-kul-19-technology.jpg";
+import HeroImg from "../../../../public/Image/xresch-technology-6928567_1920.jpg";
 
 export default function Hero() {
     return (
         <section
         className="min-h-[100vh] pt-15 flex items-center px-6 lg:px-15"
-        style={{ background: "linear-gradient(0deg, var(--color-3) 0%, var(--color-2) 50%, var(--color-5) 100%)" }}
+        style={{ background: "linear-gradient(380deg, var(--color-5) 0%, var(--color-2) 60%, var(--color-1) 100%)" }}
         >
         <div className="max-w-7xl mx-auto w-full py-20 md:py-0">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
             <div className="text-center md:text-left">
 
-                <motion.h1
+                <motion.div
                 initial={{ opacity: 0, y: -30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
+                className="w-fit p-2 pl-7 pr-7 rounded-[20px] bg-[#6bc3cd54] flex items-center gap-2 mb-6 text-white mx-auto md:mx-0"
+                >
+                <span className="text-sm">Qui sommes-nous ?</span>
+                </motion.div>
+
+                <motion.h1
+                initial={{ opacity: 0, y: -30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
                 className="text-3xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-4 text-white leading-tight"
                 >
-                Protégez votre système d'information contre les{" "}
-                <span className="relative z-10 text-[var(--color-1)]">cybermenaces</span>
+                Une équipe d'experts au service de votre{" "}
+                <span className="text-[var(--color-1)]">transformation IT</span>
                 </motion.h1>
 
                 <motion.p
                 initial={{ opacity: 0, y: -30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
                 className="text-blue-100 mb-8 text-base md:text-lg"
                 >
-                CYNERIS sécurise vos infrastructures, vos données et vos utilisateurs grâce à
-                des solutions de cybersécurité avancées.
+                CYNERIS accompagne les PME et ETI dans leur
+                transformation numérique avec expertise, proximité et engagement.
                 </motion.p>
 
                 <motion.div
@@ -42,11 +50,9 @@ export default function Hero() {
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
                 className="flex justify-center md:justify-start"
                 >
-                <Link href="/Page/Contact" className="hover:text-accent flex items-center gap-1">
                 <button className="bg-white hover:bg-[var(--color-2)] text-[var(--color-5)] hover:text-white font-semibold px-6 py-3 rounded-lg transition">
                     Nous contacter →
                 </button>
-                </Link>
                 </motion.div>
 
             </div>
@@ -59,7 +65,7 @@ export default function Hero() {
             >
                 <Image
                 src={HeroImg}
-                alt="Hero Cyneris"
+                alt="Équipe CYNERIS"
                 className="rounded-xl shadow-2xl w-full max-w-sm md:max-w-full h-auto"
                 />
             </motion.div>

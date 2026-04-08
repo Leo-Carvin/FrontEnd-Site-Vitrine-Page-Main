@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 
 export default function CTASection() {
@@ -16,7 +17,7 @@ export default function CTASection() {
 
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
           <Link
-            href="/#contact"
+            href="Contact"
             className="bg-[var(--color-4)] hover:bg-[var(--color-3)] text-white font-semibold px-10 py-4 rounded-lg transition text-center"
           >
             Contactez CYNERIS

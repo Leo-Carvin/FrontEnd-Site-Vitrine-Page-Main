@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { motion } from "motion/react";
 import HeroImg from "../../../../public/Image/37655-removebg-preview.png";
@@ -16,7 +17,6 @@ export default function Hero() {
     <div className="max-w-7xl mx-auto w-full py-20 md:py-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-        {/* TEXTE */}
         <motion.div
             className="text-center md:text-left"
             initial="hidden"
@@ -74,13 +74,14 @@ export default function Hero() {
                 }}
                 className="flex justify-center md:justify-start"
             >
-                <button className="bg-white hover:bg-[var(--color-2)] text-[var(--color-5)] hover:text-white font-semibold px-6 py-3 rounded-lg transition">
-                    Nous contacter →
-                </button>
+                <Link href="/Page/Contact" className="hover:text-accent flex items-center gap-1">
+                    <button className="bg-white hover:bg-[var(--color-2)] text-[var(--color-5)] hover:text-white font-semibold px-6 py-3 rounded-lg transition">
+                        Nous contacter →
+                    </button>
+                </Link>
             </motion.div>
         </motion.div>
 
-        {/* IMAGE */}
         <motion.div
             className="flex justify-center md:justify-end"
             initial={{ opacity: 0, x: 80 }}
