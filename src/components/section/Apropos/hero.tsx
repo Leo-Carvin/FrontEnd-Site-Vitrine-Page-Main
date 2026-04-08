@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
-import HeroImg from "../../../../public/Image/xresch-technology-6928567_1920.jpg";
+import HeroImg from "../../../../public/Image/annie-spratt-QckxruozjRg-unsplash.jpg";
 
 export default function Hero() {
     return (
