@@ -91,6 +91,7 @@ export default function Hero() {
             <Image
                 src={HeroImg}
                 alt="Hero Cyneris"
+                priority
                 className="rounded-xl w-full max-w-sm md:max-w-full h-auto"
             />
         </motion.div>
