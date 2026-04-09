@@ -67,7 +67,7 @@ export default function Header() {
             )}
           </div>
 
-          <Link href="/#a-propos" onClick={() => setMenuOpen(false)}>À propos</Link>
+          <Link href="/Page/Apropos" onClick={() => setMenuOpen(false)}>À propos</Link>
           <Link href="/#avantages" onClick={() => setMenuOpen(false)}>Avantages</Link>
           <Link href="/Page/Contact" onClick={() => setMenuOpen(false)}>Contact</Link>
         </div>
