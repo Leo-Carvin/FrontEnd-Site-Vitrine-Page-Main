@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
-import HeroImg from "../../../../public/Image/annie-spratt-QckxruozjRg-unsplash.jpg";
+import HeroImg from "../../../../public/Image/annie-spratt-QckxruozjRg-unsplash-_1__11zon.webp";
 
 export default function Hero() {
     return (
@@ -67,6 +67,8 @@ export default function Hero() {
                 src={HeroImg}
                 alt="Équipe CYNERIS"
                 className="rounded-xl shadow-2xl w-full max-w-sm md:max-w-full h-auto"
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
                 />
             </motion.div>
 
