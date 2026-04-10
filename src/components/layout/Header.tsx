@@ -32,7 +32,7 @@ export default function Header() {
             </ul>
           </div>
           <Link href="/Page/Apropos" className="hover:text-accent">À propos</Link>
-          <Link href="/#avantages" className="hover:text-accent">Avantages</Link>
+          <Link href="/Page/Avantages" className="hover:text-accent">Avantages</Link>
           <Link href="/Page/Contact" className="bg-[var(--color-5)] hover:bg-[var(--color-4)] text-white font-semibold px-5 py-2 rounded-lg transition">Contact</Link>
         </nav>
 
@@ -68,7 +68,7 @@ export default function Header() {
           </div>
 
           <Link href="/Page/Apropos" onClick={() => setMenuOpen(false)}>À propos</Link>
-          <Link href="/#avantages" onClick={() => setMenuOpen(false)}>Avantages</Link>
+          <Link href="/Page/Avantages" onClick={() => setMenuOpen(false)}>Avantages</Link>
           <Link href="/Page/Contact" onClick={() => setMenuOpen(false)}>Contact</Link>
         </div>
       )}

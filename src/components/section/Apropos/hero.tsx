@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { motion } from "motion/react";
 import HeroImg from "../../../../public/Image/annie-spratt-QckxruozjRg-unsplash-_1__11zon.webp";
@@ -50,9 +51,11 @@ export default function Hero() {
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
                 className="flex justify-center md:justify-start"
                 >
+                <Link href="/Page/Contact" className="hover:text-accent flex items-center gap-1">
                 <button className="bg-white hover:bg-[var(--color-2)] text-[var(--color-5)] hover:text-white font-semibold px-6 py-3 rounded-lg transition">
                     Nous contacter →
                 </button>
+                </Link>
                 </motion.div>
 
             </div>
@@ -66,9 +69,8 @@ export default function Hero() {
                 <Image
                 src={HeroImg}
                 alt="Équipe CYNERIS"
-                className="rounded-xl shadow-2xl w-full max-w-sm md:max-w-full h-auto"
                 priority
-                sizes="(max-width: 768px) 100vw, 50vw"
+                className="rounded-xl shadow-2xl w-full max-w-sm md:max-w-full h-auto"
                 />
             </motion.div>
 

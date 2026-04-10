@@ -24,17 +24,15 @@ export default function Footer() {
           <Link href="/Page/Plateformes-Solutions" className="text-gray-500 hover:text-black text-sm transition">Plateformes & Solutions</Link>
         </div>
 
-        {/* Entreprise */}
         <div className="flex flex-col gap-3">
           <h3 className="font-bold text-black mb-2">Entreprise</h3>
-          <Link href="#a-propos" className="text-gray-500 hover:text-black text-sm transition">À propos</Link>
+          <Link href="/Page/Apropos" className="text-gray-500 hover:text-black text-sm transition">À propos</Link>
           <Link href="#valeurs" className="text-gray-500 hover:text-black text-sm transition">Nos valeurs</Link>
           <Link href="#carrieres" className="text-gray-500 hover:text-black text-sm transition">Carrières</Link>
           <Link href="#blog" className="text-gray-500 hover:text-black text-sm transition">Blog</Link>
-          <Link href="#contact" className="text-gray-500 hover:text-black text-sm transition">Contact</Link>
+          <Link href="/Page/Contact" className="text-gray-500 hover:text-black text-sm transition">Contact</Link>
         </div>
 
-        {/* Contact */}
         <div className="flex flex-col gap-4">
           <h3 className="font-bold text-black mb-2">Contact</h3>
           <div className="flex items-start gap-3 text-sm text-gray-500">
