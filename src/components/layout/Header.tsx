@@ -32,6 +32,7 @@ export default function Header() {
               <li><Link href="/Page/PenTest" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">Pentest</Link></li>
               <li><Link href="/Page/DataSciense" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">Data Science</Link></li>
               <li><Link href="/Page/NexEris" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">NEX.ERIS</Link></li>
+              <li><Link href="/Page/SecureDev" className="block px-4 py-2 hover:bg-accent hover:text-[var(--color-1)]">Sécurité</Link></li>
             </ul>
           </div>
           <Link href="/Page/Apropos" className="hover:text-accent">À propos</Link>
