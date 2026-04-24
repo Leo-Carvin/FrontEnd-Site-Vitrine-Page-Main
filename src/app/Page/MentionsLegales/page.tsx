@@ -12,13 +12,13 @@ export default function MentionsLegales() {
 
         <section>
           <h2 className="text-2xl font-semibold mb-4">1. Informations sur l'éditeur</h2>
-          <p>Le présent site est édité par la société <strong>[Nom de votre entreprise]</strong>.</p>
+          <p>Le présent site est édité par la société <strong>CYNERIS</strong>.</p>
           <ul className="list-disc pl-5 mt-2 space-y-1">
             <li>Forme juridique : [ex: SAS / SARL / Auto-entrepreneur]</li>
             <li>Capital social : [Montant du capital] €</li>
             <li>Siège social : [Adresse complète du siège]</li>
             <li>Immatriculation : RCS [Ville] n° [Numéro SIRET ou RCS]</li>
-            <li>Numéro de TVA intracommunautaire : [Votre numéro]</li>
+            <li>Numéro de TVA intracommunautaire : [numéro]</li>
             <li>Contact : [Email de contact] | [Téléphone]</li>
           </ul>
         </section>
@@ -37,12 +37,13 @@ export default function MentionsLegales() {
 
         <section>
           <h2 className="text-2xl font-semibold mb-4">4. Propriété intellectuelle</h2>
-          <p>La structure générale, ainsi que les logiciels, textes, images animées ou fixes, sons, savoir-faire, dessins, graphismes et tout autre élément composant le site sont la propriété exclusive de [Nom de votre entreprise]. Toute représentation totale ou partielle de ce site par quelque procédé que ce soit, sans l'autorisation expresse de l'exploitant, est interdite.</p>
+          <p>La structure générale, ainsi que les logiciels, textes, images animées ou fixes, sons, savoir-faire, dessins, graphismes et tout autre élément composant le site sont la propriété exclusive de <strong>CYNERIS</strong>
+          . Toute représentation totale ou partielle de ce site par quelque procédé que ce soit, sans l'autorisation expresse de l'exploitant, est interdite.</p>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold mb-4">5. Responsabilité</h2>
-          <p>Les informations fournies sur le site sont communiquées à titre indicatif. [Nom de votre entreprise] met tout en œuvre pour offrir des outils disponibles et vérifiés, mais ne saurait être tenu pour responsable des erreurs ou d'une absence de disponibilité des informations.</p>
+          <p>Les informations fournies sur le site sont communiquées à titre indicatif. <strong>CYNERIS</strong> met tout en œuvre pour offrir des outils disponibles et vérifiés, mais ne saurait être tenu pour responsable des erreurs ou d'une absence de disponibilité des informations.</p>
         </section>
       </div>
     </main>
