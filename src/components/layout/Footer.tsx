@@ -27,7 +27,8 @@ export default function Footer() {
         <div className="flex flex-col gap-3">
           <h3 className="font-bold text-black mb-2">Entreprise</h3>
           <Link href="/Page/Apropos" className="text-gray-500 hover:text-black text-sm transition">À propos</Link>
-          <Link href="#valeurs" className="text-gray-500 hover:text-black text-sm transition">Nos valeurs</Link>
+          <Link href="/Page/MentionsLegales" className="text-gray-500 hover:text-black text-sm transition">Mentions Légales</Link>
+          <Link href="/Page/Confidentialite" className="text-gray-500 hover:text-black text-sm transition">Politique de confidentialité</Link>
           <Link href="#carrieres" className="text-gray-500 hover:text-black text-sm transition">Carrières</Link>
           <Link href="#blog" className="text-gray-500 hover:text-black text-sm transition">Blog</Link>
           <Link href="/Page/Contact" className="text-gray-500 hover:text-black text-sm transition">Contact</Link>
