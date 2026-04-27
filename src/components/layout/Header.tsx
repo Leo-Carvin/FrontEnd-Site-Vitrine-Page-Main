@@ -22,7 +22,6 @@ const CATS = [
     subtitle: "Maîtrisez votre SI",
     items: [
       { label: "Réseau",                  href: "/Page/Infra-Reseaux",           desc: "LAN, WAN, SD-WAN" },
-      { label: "Infrastructure",          href: "/Page/Services#infrastructure",  desc: "Serveurs & cloud" },
       { label: "Plateformes & Solutions", href: "/Page/Plateformes-Solutions",    desc: "Intégration & MCO" },
     ],
   },
@@ -30,7 +29,7 @@ const CATS = [
     title: "Data & IA", icon: FaBrain, color: "text-violet-500", bg: "bg-violet-50", border: "border-violet-200",
     subtitle: "Exploitez vos données",
     items: [
-      { label: "Data Science",       href: "/Page/DataSciense",       desc: "ML & analytics" },
+      { label: "Data Science",       href: "/Page/DataScience",       desc: "ML & analytics" },
       { label: "Gestion de données", href: "/Page/GestionDesDonnees", desc: "Gouvernance & ETL" },
       { label: "NEX.ERIS",           href: "/Page/NexEris",           desc: "Plateforme IA propriétaire" },
     ],

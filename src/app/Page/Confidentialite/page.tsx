@@ -11,7 +11,7 @@ export default function Confidentialite() {
 
         <section>
           <h2 className="text-2xl font-semibold mb-4">1. Qui sommes-nous ?</h2>
-          <p>Nous sommes la société CYNERIS. Nous nous engageons à protéger la vie privée des utilisateurs de notre site.</p>
+          <p>Nous sommes la société [Nom de votre entreprise]. Nous nous engageons à protéger la vie privée des utilisateurs de notre site.</p>
         </section>
 
         <section>
@@ -35,7 +35,7 @@ export default function Confidentialite() {
 
         <section>
           <h2 className="text-2xl font-semibold mb-4">4. Destinataires des données</h2>
-          <p>Vos données personnelles sont destinées exclusivement à <strong>CYNERIS</strong>. Nous ne vendons ni ne louons vos données à des tiers.</p>
+          <p>Vos données personnelles sont destinées exclusivement à <strong>[Nom de votre entreprise]</strong>. Nous ne vendons ni ne louons vos données à des tiers.</p>
         </section>
 
         <section>
@@ -46,7 +46,7 @@ export default function Confidentialite() {
         <section>
           <h2 className="text-2xl font-semibold mb-4">6. Vos droits (RGPD)</h2>
           <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification, de portabilité et de suppression de vos données, ainsi qu'un droit d'opposition.</p>
-          <p className="mt-2">Pour exercer ces droits, contactez-nous à : <strong>contact@cyneris.fr</strong>.</p>
+          <p className="mt-2">Pour exercer ces droits, contactez-nous à : <strong>[Email de contact pour les données]</strong>.</p>
         </section>
 
         <section>

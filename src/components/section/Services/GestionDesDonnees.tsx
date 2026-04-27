@@ -3,104 +3,34 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
-import { FaDatabase, FaCheck } from "react-icons/fa";
-import InfraImg from "../../../../public/Image/hands-working-digital-device-network-graphic-overlay.jpg";
+import { FaRocket, FaCheck } from "react-icons/fa";
+import NexErisImg from "../../../../public/Image/hazel-z-FocSgUZ10JM-unsplash.jpg";
 
-export default function GestionDesDonnees() {
-    return (
-        <section className="bg-[#F9FAFB] py-20 px-8">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-
-            <motion.div
-            className="order-2 md:order-1"
-            initial={{ opacity: 0, x: -60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            viewport={{ once: true, amount: 0.2 }}
-            >
-            <Image
-                src={InfraImg}
-                alt="Gestion des Données"
-                className="rounded-2xl shadow-lg w-full h-auto object-cover"
-            />
-            </motion.div>
-
-            <div className="flex flex-col gap-6 order-1 md:order-2">
-
-            <motion.div
-                initial={{ opacity: 0, y: -30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0.2 }}
-                className="w-14 h-14 rounded-xl bg-[var(--color-5)] flex items-center justify-center text-white text-2xl"
-            >
-                <FaDatabase />
-            </motion.div>
-
-            <motion.h2
-                initial={{ opacity: 0, y: -30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-                viewport={{ once: true, amount: 0.2 }}
-                className="text-3xl font-bold text-black"
-            >
-                Gestion & Protection des Données
-            </motion.h2>
-
-            <motion.p
-                initial={{ opacity: 0, y: -30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-                viewport={{ once: true, amount: 0.2 }}
-                className="text-gray-500 leading-relaxed"
-            >
-                Stratégies complètes de sauvegarde, archivage et protection des données critiques
-                de votre entreprise.
-            </motion.p>
-
-            <motion.ul
-                className="flex flex-col gap-3"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}
-                variants={{
-                hidden: {},
-                visible: { transition: { staggerChildren: 0.08, delayChildren: 0.3 } },
-                }}
-            >
-                {[
-                "Sauvegarde externalisée sécurisée",
-                "Stockage haute disponibilité",
-                "Plan de reprise d'activité (PRA)",
-                "Conformité RGPD et protection",
-                ].map((item, index) => (
-                <motion.li
-                    key={index}
-                    variants={{
-                    hidden: { opacity: 0, x: -20 },
-                    visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: "easeOut" } },
-                    }}
-                    className="flex items-center gap-3 text-gray-600 text-sm"
-                >
-                    <FaCheck className="text-[var(--color-3)] shrink-0" />
-                    {item}
-                </motion.li>
-                ))}
-            </motion.ul>
-
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, ease: "easeOut", delay: 0.5 }}
-                viewport={{ once: true, amount: 0.2 }}
-            >
-                <Link href="/Page/GestionDesDonnees" className="text-[var(--color-3)] font-semibold hover:underline w-fit">
-                En savoir plus →
-                </Link>
-            </motion.div>
-
-            </div>
+export default function NexEris() {
+  return (
+    <section className="bg-[#F9FAFB] py-20 px-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <Image src={NexErisImg} alt="NexEris" className="rounded-2xl shadow-lg w-full h-auto order-2 md:order-1" />
+        <div className="flex flex-col gap-6 order-1 md:order-2">
+          <div className="w-14 h-14 rounded-xl bg-[var(--color-5)] flex items-center justify-center text-white text-2xl">
+            <FaRocket />
+          </div>
+          <h2 className="text-3xl font-bold text-black">NexEris : Automatisation Métier</h2>
+          <p className="text-gray-500 leading-relaxed">
+            Libérez votre potentiel. Notre plateforme propriétaire automatise vos tâches répétitives pour vous permettre de vous concentrer sur votre valeur ajoutée.
+          </p>
+          <ul className="flex flex-col gap-3">
+            {["Workflows automatisés", "Connecteurs applicatifs", "Gain de productivité immédiat"].map((item, i) => (
+              <li key={i} className="flex items-center gap-3 text-gray-700 text-sm">
+                <FaCheck className="text-[var(--color-3)]" /> {item}
+              </li>
+            ))}
+          </ul>
+          <Link href="/Page/NexEris" className="bg-[var(--color-1)] text-white font-bold px-8 py-4 rounded-lg w-fit hover:bg-opacity-90 transition">
+            En savoir plus →
+          </Link>
         </div>
-        </section>
-    );
+      </div>
+    </section>
+  );
 }

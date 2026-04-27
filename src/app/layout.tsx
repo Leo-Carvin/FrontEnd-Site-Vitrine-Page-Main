@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-// Assurez-vous que le chemin d'importation correspond à votre structure de dossiers
 import CookieBanner from "../components/layout/CookieBanner";
 
 const geistSans = Geist({
@@ -15,9 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  // Pensez à changer ces valeurs par vos informations réelles
   title: "Cyneris | Solutions IT",
   description: "Cyneris, votre partenaire informatique pour la sécurité et l'infrastructure de votre entreprise.",
+  icons: {
+    icon: "/Logo/LogoCyneris.png",
+  },
 };
 
 export default function RootLayout({
@@ -33,7 +34,6 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         {children}
         
-        {/* Intégration du bandeau de cookies */}
         <CookieBanner />
       </body>
     </html>

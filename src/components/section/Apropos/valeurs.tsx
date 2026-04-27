@@ -8,29 +8,33 @@ const valeurs = [
     icon: <FaHandshake />,
     iconBg: "#dbeafe",
     iconColor: "#2563eb",
-    title: "Engagement",
-    description: "Nous nous engageons pleinement dans chaque projet, avec une relation de confiance durable.",
+    title: "Engagement contractuel",
+    description:
+      "Nos engagements ne sont pas des promesses marketing. Ils sont inscrits dans vos SLA : délais d'intervention, disponibilité, escalade — tout est écrit noir sur blanc.",
   },
   {
     icon: <FaLightbulb />,
     iconBg: "#fef9c3",
     iconColor: "#ca8a04",
-    title: "Innovation",
-    description: "Nous adoptons les meilleures technologies pour garder votre infrastructure à la pointe.",
+    title: "Expertise de terrain",
+    description:
+      "Nos ingénieurs interviennent sur des environnements réels, complexes et critiques. Pas de solutions copiées-collées : chaque recommandation est adaptée à votre contexte.",
   },
   {
     icon: <FaShieldAlt />,
     iconBg: "#fecaca",
     iconColor: "#dc2626",
-    title: "Sécurité",
-    description: "La protection de vos données et de vos systèmes est au cœur de chacune de nos actions.",
+    title: "Sécurité by design",
+    description:
+      "La cybersécurité n'est pas une option que l'on ajoute en fin de projet. Elle est intégrée dès la conception, dans chaque infrastructure que nous déployons ou infogérons.",
   },
   {
     icon: <FaUsers />,
     iconBg: "#dcfce7",
     iconColor: "#16a34a",
-    title: "Proximité",
-    description: "Un interlocuteur dédié, disponible et réactif pour vous accompagner au quotidien.",
+    title: "Interlocuteur unique",
+    description:
+      "Un référent technique dédié connaît votre infrastructure, votre historique et vos enjeux. Vous ne réexpliquez jamais votre contexte à chaque appel.",
   },
 ];
 
@@ -47,10 +51,11 @@ export default function Valeurs() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
-            Nos valeurs
+            Ce qui nous distingue
           </h2>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-            Les principes qui guident chacune de nos actions et décisions au quotidien
+            Quatre engagements concrets — pas des valeurs d'affichage, mais des principes
+            que vous pouvez vérifier dès le premier mois.
           </p>
         </motion.div>
 
@@ -61,7 +66,9 @@ export default function Valeurs() {
           viewport={{ once: true, amount: 0.1 }}
           variants={{
             hidden: {},
-            visible: { transition: { staggerChildren: 0.1, delayChildren: 0.2 } },
+            visible: {
+              transition: { staggerChildren: 0.1, delayChildren: 0.2 },
+            },
           }}
         >
           {valeurs.map((valeur, index) => (
@@ -69,7 +76,11 @@ export default function Valeurs() {
               key={index}
               variants={{
                 hidden: { opacity: 0, y: 40 },
-                visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 0.8, ease: "easeOut" },
+                },
               }}
               className="bg-white rounded-2xl p-6 flex flex-col gap-4 shadow-sm"
             >

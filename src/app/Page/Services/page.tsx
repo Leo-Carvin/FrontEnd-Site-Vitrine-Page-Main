@@ -21,7 +21,6 @@ export default function MainPage() {
       <Virtualisation />
       <CyberSecu />
       <GestionDesDonnees />
-      <Cloud />
       <Methodologie />
       <Partenaire />
       <Contact />
