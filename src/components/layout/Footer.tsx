@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
           <div className="flex items-center gap-3 text-sm text-gray-600">
             <FaEnvelope className="text-[var(--color-1)] shrink-0" size={16} />
-            <a href="mailto:contact@cyneris.com" className="hover:text-[var(--color-1)] transition">contact@cyneris.com</a>
+            <a href="mailto:contact@cyneris.fr" className="hover:text-[var(--color-1)] transition">contact@cyneris.fr</a>
           </div>
         </div>
       </div>

@@ -12,25 +12,16 @@ const CATS = [
     title: "Sécurité", icon: FaShieldAlt, color: "text-rose-500", bg: "bg-rose-50", border: "border-rose-200",
     subtitle: "Protégez votre entreprise",
     items: [
-      { label: "Cyber Sécurité", href: "/Page/Cybersecurite", desc: "Protection & détection" },
       { label: "Pentest",        href: "/Page/PenTest",        desc: "Tests d'intrusion" },
       { label: "Sécurité Dev",   href: "/Page/SecureDev",      desc: "DevSecOps & SAST" },
     ],
   },
-  {
-    title: "Infrastructure", icon: FaServer, color: "text-blue-500", bg: "bg-blue-50", border: "border-blue-200",
-    subtitle: "Maîtrisez votre SI",
-    items: [
-      { label: "Réseau",                  href: "/Page/Infra-Reseaux",           desc: "LAN, WAN, SD-WAN" },
-      { label: "Plateformes & Solutions", href: "/Page/Plateformes-Solutions",    desc: "Intégration & MCO" },
-    ],
-  },
+  
   {
     title: "Data & IA", icon: FaBrain, color: "text-violet-500", bg: "bg-violet-50", border: "border-violet-200",
     subtitle: "Exploitez vos données",
     items: [
       { label: "Data Science",       href: "/Page/DataScience",       desc: "ML & analytics" },
-      { label: "Gestion de données", href: "/Page/GestionDesDonnees", desc: "Gouvernance & ETL" },
       { label: "NEX.ERIS",           href: "/Page/NexEris",           desc: "Plateforme IA propriétaire" },
     ],
   },

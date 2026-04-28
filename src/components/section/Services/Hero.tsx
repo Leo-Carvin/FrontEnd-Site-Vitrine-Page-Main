@@ -46,15 +46,23 @@ export default function Hero() {
                 initial={{ opacity: 0, y: -30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
-                className="flex justify-center md:justify-start"
+                className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
                 >
                 <Link href="/Page/Contact" className="hover:text-accent flex items-center gap-1">
-                <button className="bg-white hover:bg-[var(--color-2)] text-[var(--color-5)] hover:text-white font-semibold px-6 py-3 rounded-lg transition">
-                    Nous contacter →
+                <button className="bg-[var(--color-1)] hover:bg-white text-white hover:text-[var(--color-2)] font-bold px-7 py-3.5 rounded-xl transition-all duration-300 shadow-lg shadow-[var(--color-1)]/30">
+                    🔍 Demander mon audit gratuit par un expert
                 </button>
                 </Link>
-
                 </motion.div>
+
+                <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="flex items-center gap-2 text-white/60 text-sm mt-4 justify-center md:justify-start"
+                >
+                <span className="text-[var(--color-1)]">✓</span> Sans engagement · Réponse sous 4h · 100% confidentiel
+                </motion.p>
             </div>
 
             <motion.div

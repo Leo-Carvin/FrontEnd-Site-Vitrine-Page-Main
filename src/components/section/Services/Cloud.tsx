@@ -44,6 +44,30 @@ export default function Cloud() {
                 votre productivité.
             </motion.p>
 
+            {/* Pour qui */}
+            <div>
+                <p className="text-xs font-bold text-[var(--color-1)] uppercase tracking-wider mb-1">Pour qui ?</p>
+                <p className="text-sm text-gray-700">PME & ETI souhaitant moderniser leur infrastructure et outils de travail</p>
+            </div>
+
+            {/* Livrables */}
+            <div>
+                <p className="text-xs font-bold text-[var(--color-1)] uppercase tracking-wider mb-1">Livrables</p>
+                <ul className="space-y-1">
+                    {["Architecture cloud sur-mesure", "Environnement de travail configuré", "Documentation technique"].map((item, i) => (
+                    <li key={i} className="text-sm text-gray-600 flex items-center">
+                        <span className="mr-2 text-[var(--color-1)]">→</span> {item}
+                    </li>
+                    ))}
+                </ul>
+            </div>
+
+            {/* Bénéfices */}
+            <div className="p-3 bg-green-50 rounded-lg border border-green-100">
+                <p className="text-xs font-bold text-green-700 uppercase tracking-wider mb-1">Bénéfices</p>
+                <p className="text-sm text-green-800">Productivité accrue, flexibilité, réduction des coûts IT</p>
+            </div>
+
             <motion.ul
                 className="flex flex-col gap-3"
                 initial="hidden"
@@ -80,9 +104,14 @@ export default function Cloud() {
                 transition={{ duration: 0.5, ease: "easeOut", delay: 0.5 }}
                 viewport={{ once: true, amount: 0.2 }}
             >
-                <Link href="/Page/Plateformes-Solutions" className="text-[var(--color-3)] font-semibold hover:underline w-fit">
-                En savoir plus →
-                </Link>
+                <div className="flex flex-col sm:flex-row gap-3 mt-2">
+                    <Link href="/Page/Contact" className="bg-[var(--color-1)] text-white font-bold px-6 py-3 rounded-lg w-fit hover:bg-opacity-90 transition text-center">
+                    Demander un audit →
+                    </Link>
+                    <Link href="/Page/Plateformes-Solutions" className="border border-gray-300 text-gray-700 font-medium px-6 py-3 rounded-lg w-fit hover:border-gray-400 transition text-center">
+                    En savoir plus →
+                    </Link>
+                </div>
             </motion.div>
 
             </div>

@@ -4,8 +4,8 @@ import { motion } from "motion/react";
 import { FaBuilding, FaUserTie, FaCertificate, FaHeadset } from "react-icons/fa";
 
 const chiffres = [
-  { icon: <FaBuilding />,     value: "40+",  label: "Clients PME & ETI",         sublabel: "en France" },
-  { icon: <FaUserTie />,      value: "8",    label: "Ingénieurs certifiés",       sublabel: "dédiés à votre SI" },
+  { icon: <FaBuilding />,     value: "20+",  label: "Clients PME & ETI",         sublabel: "en France" },
+  { icon: <FaUserTie />,      value: "4",    label: "Ingénieurs certifiés",       sublabel: "dédiés à votre SI" },
   { icon: <FaCertificate />,  value: "12+",  label: "Certifications actives",     sublabel: "Microsoft, Cisco, ANSSI" },
   { icon: <FaHeadset />,      value: "4h",   label: "Délai d'intervention",       sublabel: "garanti contractuellement" },
 ];

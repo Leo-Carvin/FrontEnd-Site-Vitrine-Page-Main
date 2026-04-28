@@ -14,10 +14,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cyneris | Solutions IT",
-  description: "Cyneris, votre partenaire informatique pour la sécurité et l'infrastructure de votre entreprise.",
+  title: "Cyneris | Cybersécurité, Data Science & Secure Dev - Toulon",
+  description: "Cabinet IT expert : Pentest, Data Science, Secure Dev. Audit gratuit. PME & ETI du Var.",
   icons: {
-    icon: "/Logo/LogoCyneris.png",
+    icon: "/Logo/LogoCyneris.ico",
+    shortcut: "/Logo/LogoCyneris.ico",
+    apple: "/Logo/LogoCyneris.ico",
   },
 };
 

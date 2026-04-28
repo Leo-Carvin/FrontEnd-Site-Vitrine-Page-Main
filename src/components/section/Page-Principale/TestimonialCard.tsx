@@ -9,23 +9,38 @@ const temoignages = [
     {
         name: "Sophie Martin",
         role: "Directrice, TechSolutions",
-        text: "Cyneris a sécurisé tout notre parc informatique en moins d'une semaine. Une équipe extrêmement réactive.",
+        text: "Cyneris a sécurisé tout notre parc informatique en moins d'une semaine. Une équipe extrêmement réactive. Nous avons obtenu la certification ISO 27001 grâce à leur accompagnement.",
+        result: "Certification ISO 27001 obtenue",
     },
     {
         name: "Marc Durand",
         role: "Gérant, BTP Sud",
-        text: "Plus aucune panne depuis le déploiement de leurs solutions. Un vrai soulagement pour notre activité.",
+        text: "Plus aucune panne depuis le déploiement de leurs solutions. Un vrai soulagement pour notre activité. Notre productivité a augmenté de 25%.",
+        result: "0 panne en 18 mois",
     },
     {
         name: "Lucas Bernard",
         role: "CTO, Innov'Provence",
-        text: "L'audit de sécurité a été déterminant pour notre mise en conformité. Clair, net et précis.",
+        text: "L'audit de sécurité a été déterminant pour notre mise en conformité. Clair, net et précis. Ils ont identifié 12 vulnérabilités critiques que nous avons corrigées.",
+        result: "12 vulnérabilités corrigées",
     },
-
     {
         name: "Jean Dupont",
         role: "PDG, EntrepriseX",
         text: "Grâce à Cyneris, nous avons réduit nos coûts IT de 30% tout en améliorant notre performance. Un partenaire de confiance.",
+        result: "-30% coûts IT",
+    },
+    {
+        name: "Catherine Moreau",
+        role: "DSI, Hôpital de la Côte d'Azur",
+        text: " Leur expertise en cybersécurité nous a permis de protéger les données patients. Réactivité et professionnalisme exceptionnels.",
+        result: "100% données patients sécurisées",
+    },
+    {
+        name: "Antoine Roux",
+        role: "Dir. SI, Groupe Mediterranean",
+        text: "La migration vers le cloud s'est faite sans interruption de service. Un accompagnement irréprochable du début à la fin.",
+        result: "0 interruption de service",
     },
 ];
 
@@ -63,9 +78,16 @@ export default function Testimonials() {
                                     className="h-full bg-white/5 border border-white/10 rounded-2xl p-8 flex flex-col"
                                 >
                                     <FaQuoteLeft className="text-[var(--color-1)] text-2xl mb-6 opacity-50" />
-                                    <p className="text-gray-300 leading-relaxed italic flex-1 mb-8">
+                                    <p className="text-gray-300 leading-relaxed italic flex-1 mb-4">
                                         {t.text}
                                     </p>
+                                    {t.result && (
+                                        <div className="mb-6 p-3 bg-[var(--color-1)]/20 rounded-lg border border-[var(--color-1)]/30">
+                                            <p className="text-[var(--color-1)] font-bold text-sm">
+                                                ✨ {t.result}
+                                            </p>
+                                        </div>
+                                    )}
                                     <div className="flex items-center gap-3 pt-6 border-t border-white/10">
                                         <div className="w-10 h-10 rounded-xl bg-[var(--color-1)] flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
                                             {t.name.charAt(0)}

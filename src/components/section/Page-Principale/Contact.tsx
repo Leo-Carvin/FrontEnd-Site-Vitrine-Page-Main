@@ -32,7 +32,7 @@ export default function NousChoisir() {
                 </Link>
 
                 <button className="flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white hover:text-blue-700 font-semibold px-6 py-3 rounded-lg transition">
-                <FaPhone /> 04 00 00 00 00
+                <FaPhone /> 04 94 46 26 93
                 </button>
             </div>
 

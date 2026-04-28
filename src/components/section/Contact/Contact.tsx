@@ -123,7 +123,7 @@ export default function Contact() {
           <div className="bg-white rounded-2xl p-6 shadow-sm space-y-5">
             <h3 className="font-extrabold text-lg text-gray-900">Nos coordonnées</h3>
             {[ 
-              {icon: FaMapMarkerAlt, t: "Adresse", v: "LE NOBE – 270 Avenue Jean d'Ormesson, 83160 La Valette-du-Var"}, 
+              {icon: FaMapMarkerAlt, t: "Adresse", v: "LE NOBEL – 270 Avenue Jean d'Ormesson, 83160 La Valette-du-Var"}, 
               {icon: FaEnvelope, t: "Email", v: "contact@cyneris.fr"}, 
               {icon: FaClock, t: "Horaires", v: "Lun–Ven | 9h00 – 18h00"} 
             ].map((item, i) => (
@@ -143,7 +143,7 @@ export default function Contact() {
           {/* Carte */}
           <div className="rounded-2xl overflow-hidden shadow-sm h-56 lg:h-auto lg:flex-1">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1065.0670760872815!2d6.009954744567516!3d43.13714543601496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c919a695c6c399%3A0x4bf7ed709ad69050!2sSMAGEX!5e1!3m2!1sfr!2sfr!4v1777298315463!5m2!1sfr!2sfr"
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3582.3583743742415!2d6.008893126610006!3d43.13861283556001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sLE%20NOBEL%20270%20AVENUE%20JEAN%20D&#39;ORMESSON%20%2C%2083160%20LA%20VALETTE-DU-VAR!5e1!3m2!1sfr!2sfr!4v1777384150937!5m2!1sfr!2sfr"              
               width="100%"
               height="300vh"
               style={{ border: 0 }}

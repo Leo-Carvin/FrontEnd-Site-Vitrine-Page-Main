@@ -20,13 +20,7 @@ export default function CTASection() {
             href="Contact"
             className="bg-[var(--color-4)] hover:bg-[var(--color-3)] text-white font-semibold px-10 py-4 rounded-lg transition text-center"
           >
-            Contactez CYNERIS
-          </Link>
-          <Link
-            href="/plaquette.pdf"
-            className="border-2 border-white text-white hover:bg-white hover:text-[var(--color-5)] font-semibold px-10 py-4 rounded-lg transition text-center"
-          >
-            Télécharger notre plaquette
+            🔍 Demander mon audit gratuit
           </Link>
         </div>
 

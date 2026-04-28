@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
 import { FaRocket, FaCheck } from "react-icons/fa";
-import NexErisImg from "../../../../public/Image/hazel-z-FocSgUZ10JM-unsplash.jpg";
+import NexErisImg from "../../../../public/Image/robot-handshake-human-background-futuristic-digital-age (1).jpg";
 
 export default function NexEris() {
   return (
@@ -19,6 +19,31 @@ export default function NexEris() {
           <p className="text-gray-500 leading-relaxed">
             Libérez votre potentiel. Notre plateforme propriétaire automatise vos tâches répétitives pour vous permettre de vous concentrer sur votre valeur ajoutée.
           </p>
+          
+          {/* Pour qui */}
+          <div>
+            <p className="text-xs font-bold text-[var(--color-1)] uppercase tracking-wider mb-1">Pour qui ?</p>
+            <p className="text-sm text-gray-700">PME & ETI souhaitant automatiser leurs processus métier</p>
+          </div>
+
+          {/* Livrables */}
+          <div>
+            <p className="text-xs font-bold text-[var(--color-1)] uppercase tracking-wider mb-1">Livrables</p>
+            <ul className="space-y-1">
+              {["Plateforme NexEris configurée", "Workflows sur-mesure", "Formation utilisateur"].map((item, i) => (
+                <li key={i} className="text-sm text-gray-600 flex items-center">
+                  <span className="mr-2 text-[var(--color-1)]">→</span> {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Bénéfices */}
+          <div className="p-3 bg-green-50 rounded-lg border border-green-100">
+            <p className="text-xs font-bold text-green-700 uppercase tracking-wider mb-1">Bénéfices</p>
+            <p className="text-sm text-green-800">Gain de temps, réduction des erreurs, productivité augmentée</p>
+          </div>
+
           <ul className="flex flex-col gap-3">
             {["Workflows automatisés", "Connecteurs applicatifs", "Gain de productivité immédiat"].map((item, i) => (
               <li key={i} className="flex items-center gap-3 text-gray-700 text-sm">
@@ -26,9 +51,15 @@ export default function NexEris() {
               </li>
             ))}
           </ul>
-          <Link href="/Page/NexEris" className="bg-[var(--color-1)] text-white font-bold px-8 py-4 rounded-lg w-fit hover:bg-opacity-90 transition">
-            En savoir plus →
-          </Link>
+          
+          <div className="flex flex-col sm:flex-row gap-3 mt-2">
+            <Link href="/Page/Contact" className="bg-[var(--color-1)] text-white font-bold px-6 py-3 rounded-lg w-fit hover:bg-opacity-90 transition text-center">
+              Demander une démo →
+            </Link>
+            <Link href="/Page/NexEris" className="border border-gray-300 text-gray-700 font-medium px-6 py-3 rounded-lg w-fit hover:border-gray-400 transition text-center">
+              En savoir plus →
+            </Link>
+          </div>
         </div>
       </div>
     </section>
